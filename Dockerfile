@@ -1,7 +1,7 @@
 # Start with a base image of Parsey’s Cousins
 FROM agarcia175/syntaxnet
 # Add Russian language support
-COPY server/Russian-SynTagRus /opt/tensorflow/models/syntaxnet/syntaxnet/models/Russian-SynTagRus
+COPY Russian-SynTagRus /opt/tensorflow/models/syntaxnet/syntaxnet/models/Russian-SynTagRus
 # Updates the base Linux packages
 RUN apt-get update
 # Add apt-get features needed by Node
